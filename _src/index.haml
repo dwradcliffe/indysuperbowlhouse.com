@@ -15,13 +15,15 @@
     %link{:href => "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css", :rel => "stylesheet"}
     %link{:href => "css/style.css", :rel => "stylesheet"}
   %body
-  
+    = partial :facebook_boot
     .container
       .content
         .page-header
+          = partial :social
           %h1
             Superbowl House
             %small Indianapolis, IN
+          
         .row
           .span12
             = partial :photos

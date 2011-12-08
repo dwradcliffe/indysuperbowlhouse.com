@@ -356,6 +356,28 @@ body {
 
 
 
+#social {
+  float: right;
+}
+
+.price {
+  text-align: center;
+}
+
+.price .amount {
+  font-size: 4em;
+}
+
+.price small {
+  color: #888;
+  font-style: italic;
+}
+
+#call_to_action {
+  margin: 20px 0 30px;
+  text-align: center;
+}
+
 
 
 
