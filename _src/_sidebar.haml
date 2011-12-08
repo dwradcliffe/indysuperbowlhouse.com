@@ -1,7 +1,10 @@
 #sidebar
-  %span.price $1600
-  %span.price-desc per night
-  %a.call-to-action{:href => "#"} Book Now
+  .price
+    %span.amount $1600
+    %small per night
+  #call_to_action
+    %a.btn.success.larges{:href => "#"} Book Now
+  %span.label.notice Fine Print
   %ul.fine-print
     %li background check authorization required
     %li $500 deposit required upon booking
