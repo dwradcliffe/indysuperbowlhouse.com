@@ -1,49 +1,69 @@
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title></title>
-  <meta name="description" content="">
-  <meta name="author" content="Bob Sendelbach">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
-</head>
-<body>
-
-<div id="container">
-  <header>
-
-  </header>
-  <div id="main" role="main">
-
-  </div>
-  <footer>
-
-  </footer>
-</div> <!--! end of #container -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-<!-- scripts concatenated and minified via ant build script-->
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
-<!-- end scripts-->
-
-<script>
-  var _gaq=[['_setAccount','UA-2016285-35'],['_setAllowLinker', true],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-</body>
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> ><! <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <title></title>
+    <meta content='' name='description' />
+    <meta content='Bob Sendelbach' name='author' />
+    <meta content='width=device-width,initial-scale=1,user-scalable=no' name='viewport' />
+    <link href='http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/style.css' rel='stylesheet' />
+    <script src='js/libs/modernizr-2.0.6.min.js'></script>
+  </head>
+  <body>
+    <header>RENT MY HOUSE</header>
+    <div id='container'>
+      <div id='sidebar'>
+        <span class='price'>$1600</span>
+        <span class='price-desc'>per night</span>
+        <a class='call-to-action' href='#'>Book Now</a>
+        <ul class='fine-print'>
+          <li>background check authorization required</li>
+          <li>$500 deposit required upon booking</li>
+          <li>maximum occupancy of 8</li>
+          <li>major credit cards accepted via PayPal (for 2.5% fee)</li>
+        </ul>
+      </div>
+      <div id='main' role='main'>
+        <div id='photos'></div>
+        <div id='map' style='width: 100%; height: 300px'></div>
+        <div id='description'></div>
+        <div id='features'>
+          <ul>
+            <li>3 Bed / 2 Bath</li>
+            <li>1360 Square Feet</li>
+            <li>Full sized propane gas grill</li>
+            <li>3 bedrooms with queen sized beds</li>
+            <li>10.5 miles from Lucas Oil Stadium (no interstate freeway required)</li>
+            <li>Driveway snow removal (just in case)</li>
+            <li>1 Car Garage w/ Remote Opener</li>
+            <li>50" Plasma TV w/ 450 channel of premium HD cable (NFL TV, HBO, Cinemax, etc)</li>
+            <li>High speed WiFi</li>
+            <li>Can arrange for car service to and from the airport or Lucas Oil Stadium (addtn'l charge).</li>
+          </ul>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+    <!-- ! end of #container -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+    <script src='js/plugins.js'></script>
+    <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src='js/script.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq=[['_setAccount','UA-2016285-35'],['_setAllowLinker', true],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+      //]]>
+    </script>
+  </body>
 </html>
