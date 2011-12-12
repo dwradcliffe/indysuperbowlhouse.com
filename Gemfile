@@ -9,3 +9,5 @@ gem 'rb-fsevent', :require => false
 gem 'rb-fchange', :require => false
 gem 'growl'
 gem 'guard-shell'
+
+gem 'aws-s3'

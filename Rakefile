@@ -20,3 +20,22 @@ namespace :gen do
   end
   
 end
+
+desc "Deploy website"
+task :deploy do
+  require 'rubygems'
+  require 'aws/s3'
+  
+
+  
+  Dir.chdir('public')
+  Dir['**/*'].select { |f| File.file?(f) }.each do |file|
+    puts "  --> #{file}"
+    %w(www.indysuperbowlhouse.com www.indysuperbowlrentalhouse.com).each do |bucket|
+    
+      AWS::S3::S3Object.store(file, open(file), bucket, :access => :public_read)
+      
+    end
+  end
+  
+end
