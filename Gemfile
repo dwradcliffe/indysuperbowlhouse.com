@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'rake'
 gem 'haml'
+gem 'sass'
 
 gem 'guard'
 gem 'rb-inotify', :require => false

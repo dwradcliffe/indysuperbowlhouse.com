@@ -12,6 +12,8 @@ namespace :gen do
   desc "Generate CSS"
   task :css do
     # TODO
+    system "sass _sass/style.sass public/css/style.css"
+    puts "Regenerated css!"
   end
   
   desc "Generate JS"
@@ -36,6 +38,27 @@ task :deploy do
       AWS::S3::S3Object.store(file, open(file), bucket, :access => :public_read)
       
     end
+  end
+  
+end
+
+namespace :deploy do
+  
+  task :file do
+    require 'rubygems'
+    require 'aws/s3'
+
+    
+    Dir.chdir('public')
+    ENV['FILES'].select { |f| File.file?(f) }.each do |file|
+      puts "  --> #{file}"
+      %w(www.indysuperbowlhouse.com www.indysuperbowlrentalhouse.com).each do |bucket|
+
+        AWS::S3::S3Object.store(file, open(file), bucket, :access => :public_read)
+
+      end
+    end
+    
   end
   
 end
