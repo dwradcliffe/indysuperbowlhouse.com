@@ -41,8 +41,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink!
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #62CFFC; color: #fff; text-shadow: none; }
+::selection { background: #62CFFC; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -378,7 +378,24 @@ body {
   text-align: center;
 }
 
+p.label.notice {
+  padding-top:0;
+  padding-bottom:0;
+  text-align:center;
+}
 
+#map {
+  margin-bottom: 20px;
+}
+
+.text-padding {
+  padding: 0 50px;
+}
+
+#description p {
+  font-size: 12px;
+  color: gray;
+}
 
 
 /* =============================================================================
