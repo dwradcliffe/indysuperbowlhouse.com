@@ -1,0 +1,84 @@
+#photos
+  width: 700px
+  height: 350px
+  position: relative
+  margin-left: 50px
+
+#frame
+  position: absolute
+  z-index: 0
+  width: 659px
+  height: 341px
+  top: -3px
+  left: -80px
+
+/*
+ *Slideshow
+
+#slides
+  position: absolute
+  top: 15px
+  left: 4px
+  z-index: 100
+
+/*
+ *Slides container
+ *Important:
+ *Set the width of your slides container
+ *Set to display none, prevents content flash
+
+.slides_container
+  width: 480px
+  overflow: hidden
+  position: relative
+  display: none
+  a
+    width: 480px
+    height: 270px
+    display: block
+    img
+      display: block
+
+/*
+ *Each slide
+ *Important:
+ *Set the width of your slides
+ *If height not specified height will be set by the slide content
+ *Set to display block
+
+/*
+ *Next/prev buttons
+
+#slides
+  .next, .prev
+    position: absolute
+    top: 107px
+    left: -39px
+    width: 24px
+    height: 43px
+    display: block
+    z-index: 101
+  .next
+    left: 585px - 90px
+
+/*
+ *Pagination
+
+.photo-pagination
+  margin: 26px auto 0
+  width: 150px
+  li
+    float: left
+    margin: 0 1px
+    list-style: none
+    a
+      display: block
+      width: 12px
+      height: 0
+      padding-top: 12px
+      background-image: url(../images/pagination.png)
+      background-position: 0 0
+      float: left
+      overflow: hidden
+    &.current a
+      background-position: 0 -12px
