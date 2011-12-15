@@ -3,6 +3,7 @@ source :rubygems
 gem 'rake'
 gem 'haml'
 gem 'sass'
+gem 'uglifier'
 
 gem 'guard'
 gem 'rb-inotify', :require => false
