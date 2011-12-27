@@ -1,38 +1,15 @@
 require 'rubygems'
+require 'bundler/setup'
 require 'simple_site'
 
-site = SimpleSite.new
-desc "Generate Entire Site"
-task :gen => ["gen:html", "gen:css", "gen:js"]
-
-namespace :gen do
-  
-  desc "Generate HTML"
-  task :html do
-    site.generate_html
-  end
-  
-  desc "Generate CSS"
-  task :css do
-    site.generate_css
-  end
-  
-  desc "Generate JS"
-  task :js do
-    site.generate_js
-  end
-  
+SimpleSite::Tasks.new do |site|
+  site.js_files = [
+    'jquery-1.6.2.min.js',
+    'slides.min.jquery.js',
+    'plugins.js',
+    'photos.js',
+    'map.js'
+  ]
+  site.buckets = %w(www.indysuperbowlhouse.com www.indysuperbowlrentalhouse.com)
 end
 
-desc "Deploy website"
-task :deploy do
-  site.deploy!
-end
-
-namespace :deploy do
-  
-  task :file do
-    site.deploy_file!
-  end
-  
-end
